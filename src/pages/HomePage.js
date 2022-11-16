@@ -7,7 +7,6 @@ import { FormProvider } from "../form";
 import { useForm } from "react-hook-form";
 import {
   Container,
-  Alert,
   Box,
   Card,
   Stack,
@@ -23,7 +22,7 @@ const BACKEND_API = process.env.REACT_APP_BACKEND_API;
 
 const HomePage = () => {
   const dispatch = useDispatch();
-  const { books, loading, error } = useSelector((state) => state.bookstore);
+  const { books, loading } = useSelector((state) => state.bookstore);
 
   const [pageNum, setPageNum] = useState(1);
   const totalPage = 10;
