@@ -25,7 +25,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "json-server --watch ./server/db.json --port 5000 --static ./server/public",
+    "dev": "json-server --watch ./server/db.json --port 5001 --static ./server/public",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
