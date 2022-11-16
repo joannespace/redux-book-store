@@ -72,6 +72,7 @@ export const bookstoreSlice = createSlice({
         state.status = "failed";
         state.loading = false;
         state.error = action.error.message;
+        toast.error(state.error);
       });
 
     builder
